@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   filteredArray.forEach(number => {
     const li = document.createElement("li");
-    li.innerText = number;
+    li.appendChild(document.createTextNode(number));
     ul.appendChild(li);
   })
 });
